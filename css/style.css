@@ -1,0 +1,309 @@
+body {
+  background-color: #010101;
+}
+/* fonts */
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+/* fonts end */
+
+* {
+  font-family: PoppinsRegular;
+  color: white;
+}
+
+/* hover effect */
+.card,
+.nftCollection {
+  overflow: hidden;
+}
+.card img {
+  transition: 0.8s;
+}
+.nftCollection img {
+  transition: 0.6s;
+}
+.card img:hover,
+.nftCollection img:hover {
+  transform: scale(1.1);
+}
+.footer-icon i {
+  transition: 0.4s;
+}
+
+.footer-icon .fa-whatsapp:hover {
+  color: green;
+}
+.footer-icon .fa-instagram:hover {
+  color: rgb(206, 33, 62);
+}
+.footer-icon .fa-linkedin:hover {
+  color: rgb(28, 158, 209);
+}
+.footer-icon .fa-youtube:hover {
+  color: rgba(236, 18, 18, 0.911);
+}
+/* hover effect end*/
+
+/* nav */
+
+.nav-li-color > li > a {
+  color: aliceblue;
+}
+.nav-li-color > li > a:hover {
+  color: rgb(226, 15, 159);
+}
+.text-pink {
+  color: rgb(226, 15, 159) !important ;
+}
+.form-control [placeholder="Search"] {
+  color: white;
+}
+/* nav end */
+.form-control::placeholder {
+  color: white;
+}
+
+/* top content */
+
+.topContentLeft {
+  position: relative;
+  z-index: 1;
+}
+
+.topContentLeft::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    to bottom right,
+    rgba(235, 45, 252, 0.377),
+    rgba(44, 178, 231, 0.6)
+  );
+  inset: -2px;
+  filter: blur(5rem);
+
+  z-index: -1;
+}
+
+.topContentLeft img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.topContet-right {
+  position: relative;
+}
+.topContet-right h1 {
+  font-size: 3.2rem;
+  font-family: PoppinsBold;
+}
+
+.topContet-right img {
+  position: absolute;
+}
+.topContent-right-text {
+  padding-top: 9rem;
+}
+.topContentAnchor {
+  transition: 0.5s;
+}
+.topContentAnchor:hover {
+  padding: 10px;
+  color: rgb(226, 15, 159);
+  background-color: white;
+  border-radius: 5px;
+}
+.topContentBtn {
+  position: relative;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, rgb(44, 178, 231), rgb(250, 28, 65));
+  z-index: 1;
+  color: white;
+}
+.topContentBtn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  background-color: #010101;
+}
+/* top content End */
+
+/* card */
+
+.cardContent {
+  background-color: rgba(157, 10, 110, 0.12);
+  border-radius: 1rem;
+}
+
+.cardContent-span2 {
+  font-weight: 900;
+}
+.card-first-img {
+  height: 175px;
+}
+/* card end*/
+/* profile Contet */
+
+.profileContent {
+  background-color: #282c29da;
+  padding: 0.5rem 0.5rem 0.2rem;
+  border-radius: 0.7rem;
+}
+
+.profileContent > div:nth-child(1) {
+  flex-basis: 25%;
+}
+.profileContent > div:nth-child(2) {
+  flex-basis: 45%;
+}
+.profileContent > div:nth-child(3) {
+  flex-basis: 25%;
+}
+
+.profileMain {
+  margin: 2rem auto 8rem;
+}
+
+.profileContent-img {
+  position: relative;
+}
+.profileContent-img img:nth-child(2) {
+  position: absolute;
+  bottom: 1.3rem;
+  right: 1.3rem;
+}
+
+/* profile Contet end*/
+
+/* collection */
+.collection {
+  border-width: 0 1px 1px;
+  border-radius: 1rem;
+  border-color: rgb(226, 15, 159);
+}
+.collectionImg {
+  flex-basis: 25%;
+}
+
+.collectionImg > span {
+  position: absolute;
+  top: 1rem;
+  right: 1.3rem;
+  background-color: #010101;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 40px;
+}
+.collectionText {
+  flex-basis: 75%;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.nav-link {
+  color: white;
+}
+
+.collectionList .nav-link.active {
+  position: relative;
+  background: linear-gradient(to right, rgb(44, 178, 231), rgb(250, 28, 65));
+  color: white;
+  z-index: 1;
+}
+
+.collectionList .nav-link::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 3px;
+  background-color: #010101;
+  z-index: -1;
+}
+/* collection end*/
+
+/* nftCollection */
+.nftCollection {
+  position: relative;
+}
+
+.nftCollection > span {
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+/* nftCollection end */
+
+/*  */
+.accordion-button {
+  background-color: #010101;
+}
+
+/* footerContent */
+.footerContent a {
+  text-decoration: none;
+  color: white;
+}
+/* footerContent ens */
+/* media */
+@media (max-width: 499px) {
+  .profileContent-img img:nth-child(2) {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+  }
+  .topContent-right-text h1 {
+    font-size: 1.5rem;
+  }
+  .topContent-right-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 764px) {
+  .topContet-right img {
+    display: none;
+  }
+  .topContent-right-text {
+    padding: 1.5rem 0 0 0;
+  }
+  .profileContent-img img:nth-child(2) {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .card-first-img {
+    height: 100%;
+  }
+  .profileContent-img img:nth-child(2) {
+    position: absolute;
+    bottom: 1.3rem;
+    right: 1.7rem;
+  }
+}
+
+@media (min-width: 1199px) {
+  .profileContent-img img:nth-child(2) {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+  }
+}
